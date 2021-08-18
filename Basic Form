@@ -1,0 +1,81 @@
+<style>
+  h1 {
+    Text-Align: center;
+  }
+  p {
+    Text-Align: center;
+  }
+  form {
+    margin: 5px;
+    border-radius: 10px;
+    border-line: 1px;
+    background-color: white;
+    padding: 10px;
+  }
+  body {
+    background-color: #D7DCDD;
+    border-radius: 1px;
+    font-family: Sans-Serif;
+    line-height: 1.4;
+    width: 600px;
+    margin: auto;
+  }
+  input {
+    padding: 5px;
+    border-radius: 10px;
+  }
+textarea {
+    padding: 5px;
+    border-radius: 10px;
+  }
+ select {
+    padding: 5px;
+    border-radius: 10px;
+</style>
+<h1 id="title">Customer Service Inquiry</h1>
+<p id="description">Please complete this forum to be contacted by one of our customer service reps</p>
+<form id="survey-form"> 
+  <label for="name" id="name-label">name</label>
+  <input id="name" type="text" name="name" placeholder="johndoe" required> </input>
+<br>
+  <label for="email" id="email-label">email</label>
+  <input id="email" type="email" name="email" placeholder="johndoe@abc.com" required> </input>
+<br>
+  <label for="age" id="number-label">age</label>
+  <input id="number" type="number" name="age" placeholder="21" min="15" max="50" required> </input>
+<br>
+  <label for="dropdown" id="dropdown">Select Your Issue</label>
+<select id="dropdown">
+  <option value="My Account">My Account</option>
+  <option value="Billing">Billing</option>
+  <option value="General">General</option>
+  <option value="Sales">Sales</option>
+  <option value="Other">Other</option>
+</select>
+ <br>
+ <br>
+  <h3><b> Priority Level: </b></h3>
+  <input id="priority-level" type="radio" id="high" name="priority-level" value="high"></input>
+  <label for="priority-level"> high <label>
+<br>
+   <input id="priority-level" type="radio" id="medium" name="priority-level" value="medium"></input>
+  <label for="priority-level"> medium <label>
+<br>
+ <input id="priority-level" type="radio" id="low" name="priority-level" value="low"></input>
+  <label for="priority-level"> low <label>
+<br>
+<!--please note below, <label>'s were not used as they are above-->
+ <h3><b> Best time(s) to contact you (select all that apply): </b></h3>
+  <input id="contact-time" type="checkbox" id="morning" name="contact-time" value="morning">Morning</input>
+<br>
+  <input id="contact-time" type="checkbox" id="afternoon" name="contact-time" value="afternoon">Afternoon</input>
+<br>
+  <input id="contact-time" type="checkbox" id="evening" name="contact-time" value="evening">Evening</input>
+<br>
+<br>
+    <h3>Additional Comments:</h3>
+    <textarea id="text-area" name="textarea" placeholder="Additional Comments" rows="5" cols="40"></textarea>
+<br>
+    <input id="submit" type="submit" value="submit" name="submit"></input>
+</form>
+<br>
